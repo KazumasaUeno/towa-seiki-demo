@@ -12,6 +12,7 @@
 -->
 <style>
   :root{
+    --gut:clamp(16px,4vw,64px);
     --ink:#1d2430; --sub:#4b5566; --line:#dde2ea; --bg:#ffffff; --soft:#f3f5f8;
     --brand:#0f3d6e; --brand2:#1f6fb2; --accent:#e8a33d;
   }
@@ -20,7 +21,7 @@
   a{color:var(--brand2)}
   .demo{background:#fff4d6;color:#5b4400;font-size:13px;text-align:center;padding:6px 16px;border-bottom:1px solid #f0dca0}
   header{background:var(--brand);color:#fff}
-  .hwrap{max-width:1080px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+  .hwrap{padding:14px var(--gut);display:flex;align-items:center;gap:24px;flex-wrap:wrap}
   .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.04em}
   .mark{width:34px;height:34px;border-radius:6px;background:linear-gradient(135deg,var(--accent),#f3c46f);display:grid;place-items:center;color:var(--brand);font-weight:800}
   .logo small{display:block;font-size:11px;font-weight:400;opacity:.8;letter-spacing:.08em}
@@ -28,18 +29,18 @@
   nav a{color:#fff;text-decoration:none;opacity:.9}
   nav a:hover{opacity:1;text-decoration:underline}
   .hero{background:linear-gradient(120deg,#0f3d6e 0%,#1f6fb2 60%,#3b8fd0 100%);color:#fff}
-  .hwrap2{max-width:1080px;margin:0 auto;padding:72px 16px 64px}
+  .hwrap2{padding:88px var(--gut) 80px}
   .hero h1{font-size:clamp(26px,4.4vw,42px);line-height:1.35;letter-spacing:.02em}
   .hero p{margin-top:16px;max-width:620px;opacity:.92}
   .kpi{display:flex;gap:28px;flex-wrap:wrap;margin-top:32px}
   .kpi div{border-left:3px solid var(--accent);padding-left:12px}
   .kpi b{display:block;font-size:24px}
   .kpi span{font-size:13px;opacity:.85}
-  main{max-width:1080px;margin:0 auto;padding:0 16px}
+  main{padding:0 var(--gut)}
   section{padding:56px 0;border-bottom:1px solid var(--line)}
   h2{font-size:24px;color:var(--brand);margin-bottom:20px;letter-spacing:.03em}
   h2::before{content:"";display:inline-block;width:6px;height:20px;background:var(--accent);margin-right:10px;vertical-align:-2px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
   .card{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:20px}
   .card h3{font-size:17px;margin-bottom:6px}
   .card p{color:var(--sub);font-size:14px}
@@ -50,7 +51,7 @@
   ul.dots li{margin:4px 0}
   .cta{display:inline-block;margin-top:16px;background:var(--brand);color:#fff;text-decoration:none;padding:10px 20px;border-radius:8px;font-weight:600}
   footer{background:#0b2a4b;color:#cbd6e4;font-size:13px;margin-top:56px}
-  .fwrap{max-width:1080px;margin:0 auto;padding:28px 16px}
+  .fwrap{padding:28px var(--gut)}
   @media (max-width:640px){ nav{margin-left:0;gap:12px} th{width:36%} section{padding:40px 0} }
 </style>
 </head>
